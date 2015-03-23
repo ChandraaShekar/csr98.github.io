@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>
+		WallC-home
+	</title>
+<link rel="stylesheet" type="text/css" href="css\animate.css">
+<style type="text/css">
+	
+ body {
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size: 19px;
+      }
+
+      a{
+      	text-decoration: none;
+      	
+      	color: #333; 
+        float: left;
+        margin-top: 0px;
+        padding: 30px;
+        padding-top: 20px;
+      }
+
+      a:hover{
+      	color: #51ab6d;
+      	border-top: 3px solid #1f48c4;
+      	margin-bottom: 0.1em;
+      }
+
+      li{
+      	list-style: none;
+      	margin-left: 300px;
+      	margin-bottom: -0px;
+
+      }
+
+      header{
+      	width: 100%;
+      	height: 80px;
+      	position: fixed;
+      	background-color: #fff;
+      	top: 0px;
+      	left: 0px;
+      	
+      }
+
+      a:active{
+      	color: #51ab6d;
+      }
+
+     h1{
+     	margin-left: 460px;
+     	margin-top: 0px;
+     	font-size: 40px;
+     	color: #51ab6d;
+     }
+
+     img{
+     	float: right;
+     	margin-right: 300px; 
+     }
+     
+      #fb2{
+      	visibility: hidden;
+      }
+      
+      .fb3{
+      	visibility: visible;
+      }  
+
+</style>
+
+<script type="text/javascript" src="js\jquery.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+         $("#fb1").mouseover(function(){
+         	$(this).toggle()
+
+         });
+
+         $("#fb1").mouseover(function(){
+         	$("#fb2").css({"visibility": "visible",}, 1000)
+         });
+	});
+
+</script>
+
+</head>
+<body>
+
+	<header class="fadeInDown animated">
+
+	<li><a href="">Home</a></li>
+	<li><a href="">About</a></li>
+		<li><a href="">More Apps</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Comment</a></li>
+
+<li>
+	<img id="fb1" src="img/fb.png" width="50" height="50" />
+	<img id="fb2" src="img/fb2.png" width="50" height="50" />
+</li>
+
+	</header>
+
+<!--http://www.bhatnaturally.com/
+http://daneden.github.io/animate.css/
+-->
+
+</body>
+</html>
