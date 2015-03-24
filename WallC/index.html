@@ -41,7 +41,7 @@
       	background-color: #fff;
       	top: 0px;
       	left: 0px;
-      	
+      	border-bottom: 1px solid #333 0.9;
       }
 
       a:active{
@@ -49,9 +49,9 @@
       }
 
      h1{
-     	margin-left: 460px;
-     	margin-top: 0px;
-     	font-size: 40px;
+     	margin-left: 776px;
+     	margin-top: 200px;
+     	font-size: 95px;
      	color: #51ab6d;
      }
 
@@ -68,8 +68,39 @@
       	visibility: visible;
       }  
 
-</style>
+      button{
+      	width: 300px;
+      	height: 100px;
+        margin-left: 400px;
+        border: 1px solid #333;
+        border-radius: 20px;
+        background-color: #fff;
+        margin-top: 300px;
+        -webkit-transition: 0.5s;
+        -moz-transition: 1s;
+        -o-transition: 1s;
+        transition: 0.5s;
+      }
 
+      button:hover{
+      	background-color: #51ab6d;
+      }
+
+      button:active{
+      	border: 0px;
+      }
+
+      h3{
+      	text-transform: uppercase;
+      	color: #333;
+      }
+      
+      button:focus{
+      	outline: 0px;
+      }
+    
+</style>
+<!--Jquery start-->
 <script type="text/javascript" src="js\jquery.js"></script>
 
 <script type="text/javascript">
@@ -78,14 +109,22 @@
          	$(this).toggle()
 
          });
+	});
 
-         $("#fb1").mouseover(function(){
-         	$("#fb2").css({"visibility": "visible",}, 1000)
-         });
+	$(document).ready(function(){
+		$("#fb1").mouseover(function(){
+			$("#fb2").css("visibility", "visible")
+		});
+        
+        $("fb2").moeseleave(function(){
+            $(this).css("visibility", "hidden")
+        });
+
+
 	});
 
 </script>
-
+<!--Jquery end-->
 </head>
 <body>
 
@@ -104,9 +143,9 @@
 
 	</header>
 
-<!--http://www.bhatnaturally.com/
-http://daneden.github.io/animate.css/
--->
+<h1 class="fadeInup animated">WallC</h1>
 
+<button class="fadeInleft animated" style="none" onclick="https://github.com/Pothulapati/WallC/blob/master/WallC_Desktop/Form1.cs"><h3>show on Github</h3></button>
+<button class="fadeinright animated" style="none"><h3>Download</h3></button>
 </body>
 </html>
